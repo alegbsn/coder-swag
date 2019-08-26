@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B234F7EE2314663900B1E841 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234F7ED2314663900B1E841 /* CategoryTableViewCell.swift */; };
+		B234F7F02314695700B1E841 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234F7EF2314695700B1E841 /* Category.swift */; };
+		B234F7F323146B5000B1E841 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B234F7F223146B5000B1E841 /* DataService.swift */; };
 		B2AAFB07231450E6006839A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AAFB06231450E6006839A8 /* AppDelegate.swift */; };
 		B2AAFB09231450E6006839A8 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AAFB08231450E6006839A8 /* CategoriesViewController.swift */; };
 		B2AAFB0C231450E6006839A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AAFB0A231450E6006839A8 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		B234F7ED2314663900B1E841 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		B234F7EF2314695700B1E841 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		B234F7F223146B5000B1E841 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		B2AAFB03231450E6006839A8 /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2AAFB06231450E6006839A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2AAFB08231450E6006839A8 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +52,7 @@
 		B234F7EB231465DD00B1E841 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B234F7EF2314695700B1E841 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -58,6 +63,14 @@
 				B234F7ED2314663900B1E841 /* CategoryTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B234F7F123146B3E00B1E841 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B234F7F223146B5000B1E841 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		B2AAFAFA231450E6006839A8 = {
@@ -79,6 +92,7 @@
 		B2AAFB05231450E6006839A8 /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				B234F7F123146B3E00B1E841 /* Services */,
 				B234F7EC231465E600B1E841 /* View */,
 				B234F7EB231465DD00B1E841 /* Model */,
 				B234F7EA231465CD00B1E841 /* Controller */,
@@ -165,6 +179,8 @@
 				B2AAFB09231450E6006839A8 /* CategoriesViewController.swift in Sources */,
 				B2AAFB07231450E6006839A8 /* AppDelegate.swift in Sources */,
 				B234F7EE2314663900B1E841 /* CategoryTableViewCell.swift in Sources */,
+				B234F7F02314695700B1E841 /* Category.swift in Sources */,
+				B234F7F323146B5000B1E841 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

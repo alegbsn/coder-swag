@@ -24,22 +24,25 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RLg-0D-CQX">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RLg-0D-CQX">
                                 <rect key="frame" x="0.0" y="70" width="414" height="738"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="171" id="J6Z-CZ-XRe" customClass="CategoryTableViewCell" customModule="coder_swag" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="171"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="170" id="J6Z-CZ-XRe" customClass="CategoryTableViewCell" customModule="coder_swag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="J6Z-CZ-XRe" id="TJc-bD-shG">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="170.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="ofU-cV-3zH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="170.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="414" height="163.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="170" id="0Rx-c1-u2Z"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShP-hP-Dsn">
-                                                    <rect key="frame" x="129" y="71.5" width="156" height="28"/>
+                                                    <rect key="frame" x="129" y="71" width="156" height="28"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="28" id="Kll-vm-aMx"/>
                                                         <constraint firstAttribute="width" constant="156" id="Q9d-Eu-Fjx"/>
@@ -53,9 +56,9 @@
                                                 <constraint firstItem="ofU-cV-3zH" firstAttribute="leading" secondItem="TJc-bD-shG" secondAttribute="leading" id="584-JO-JQQ"/>
                                                 <constraint firstItem="ShP-hP-Dsn" firstAttribute="centerY" secondItem="TJc-bD-shG" secondAttribute="centerY" id="8eN-Z2-ECb"/>
                                                 <constraint firstAttribute="trailing" secondItem="ofU-cV-3zH" secondAttribute="trailing" id="BKe-sS-4ap"/>
-                                                <constraint firstItem="ofU-cV-3zH" firstAttribute="top" secondItem="TJc-bD-shG" secondAttribute="top" id="hgY-c4-ENb"/>
+                                                <constraint firstItem="ofU-cV-3zH" firstAttribute="top" secondItem="TJc-bD-shG" secondAttribute="top" constant="3" id="hgY-c4-ENb"/>
                                                 <constraint firstItem="ShP-hP-Dsn" firstAttribute="centerX" secondItem="TJc-bD-shG" secondAttribute="centerX" id="p51-AH-OLg"/>
-                                                <constraint firstAttribute="bottom" secondItem="ofU-cV-3zH" secondAttribute="bottom" id="smB-XO-UcH"/>
+                                                <constraint firstAttribute="bottom" secondItem="ofU-cV-3zH" secondAttribute="bottom" constant="3" id="smB-XO-UcH"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
